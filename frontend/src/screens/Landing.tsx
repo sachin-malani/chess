@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import jpeg from "../../assets/ChessBoard.jpeg";
+import Button from "../components/Button";
 
 const Landing = () => {
   const navigate = useNavigate();
@@ -17,12 +18,7 @@ const Landing = () => {
         <div className="text-white flex flex-col items-center justify-center md:w-1/2">
           <p className="text-4xl ">Play Chess Online</p>
           <div className="mt-4 max-w-xl w-full flex justify-center">
-            <button
-              onClick={onClickButton}
-              className="bg-green-400 text-xl w-full max-w-96 hover:bg-green-600 font-bold md:h-24 rounded"
-            >
-              Play Online
-            </button>
+            <Button onClick={onClickButton}>Play Online</Button>
           </div>
         </div>
       </div>
