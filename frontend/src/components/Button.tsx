@@ -2,7 +2,7 @@ const Button = ({onClick, children}: {onClick?: () => void, children: React.Reac
   return (
     <button
       onClick={onClick}
-      className="bg-green-400 text-xl w-full max-w-96 hover:bg-green-600 font-bold md:h-24 rounded"
+      className="bg-green-500 text-xl w-full max-w-96 hover:bg-green-600 font-bold md:h-24 rounded"
     >
       {children}
     </button>
