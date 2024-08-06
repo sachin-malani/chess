@@ -31,7 +31,7 @@ export class Game {
     );
   }
 
-  makeMove(socket: WebSocket, move: { from: string; to: string }) {    
+  makeMove(socket: WebSocket, move: { from: string; to: string }) {
     if (this.board.history().length % 2 === 0 && socket !== this.player1) {
       return;
     }
